@@ -32,6 +32,6 @@ fun AppFlagsExample(appFlagsViewModel: AppFlagsViewModel = viewModel()) {
         } else {
             Text("The `test` feature is: disabled")
         }
-        Text("The string value is: " + appFlagsViewModel.string.value)
+        Text("The `string_flag` value is: " + appFlagsViewModel.string.value)
     }
 }

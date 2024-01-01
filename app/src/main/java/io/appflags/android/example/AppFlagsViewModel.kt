@@ -11,7 +11,7 @@ class AppFlagsViewModel : ViewModel() {
     private val testFlag = appFlagsClient.getBooleanFlag("test", false)
     val testEnabled = mutableStateOf(testFlag.value)
 
-    private val stringFlag = appFlagsClient.getStringFlag("string_flag", "Default String Value")
+    private val stringFlag = appFlagsClient.getStringFlag("string_flag", "default fallback")
     val string = mutableStateOf(stringFlag.value)
 
     init {
